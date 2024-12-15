@@ -1,0 +1,93 @@
+.dday {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dday-input,
+.dday-output {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dday-inner {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dday-date,
+.dday-title,
+.dday-set,
+.dday-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background: none;
+  color: var(--text-color);
+}
+
+.dday-date {
+  font-size: 50px;
+}
+
+.dday-date::-webkit-datetime-edit {
+  color: var(--text-color);
+}
+
+.dday-title {
+  text-align: center;
+  font-size: 25px;
+  color: var(--text-color);
+  outline: none;
+}
+
+.dday-title::placeholder {
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.dday-title:focus::placeholder {
+  color: transparent;
+}
+
+.dday-set,
+.dday-span {
+  position: relative;
+  font-size: 60px;
+}
+
+.dday-set::after {
+  content: "";
+  position: absolute;
+
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 2px;
+
+  transition: all 0.5s ease-in-out;
+
+  background-color: var(--text-color);
+}
+
+.dday-set:hover::after {
+  width: 100%;
+}
+
+.dday-delete {
+  margin-top: 0px;
+
+  font-size: 15px;
+}

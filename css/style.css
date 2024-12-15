@@ -1,9 +1,32 @@
 @import url(font.css);
+@import url(components/user.css);
+@import url(components/weather.css);
+@import url(components/menu.css);
+@import url(components/content.css);
+@import url(components/todo.css);
+@import url(components/music.css);
+@import url(components/dday.css);
+@import url(components/pomo.css);
+@import url(components/fav.css);
+@import url(components/color.css);
+
+:root {
+  --bg-color: #b9efa3;
+  --text-color: #000000;
+}
 
 body {
-  margin: 40px 60px;
+  height: 100vh;
+  margin: 30px 60px;
+  overflow: hidden;
 
-  background-color: #b9efa3;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .hidden {

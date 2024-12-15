@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <form class="user-form hidden">
+      <span class="f-60">What Your Name? </span>
+      <input class="f-60" type="text" maxlength="15" required autofocus />
+    </form>
+
+    <div class="user-hello f-60">
+      <div class="user-hello__total">
+        <span>Hello, </span>
+        <div class="user-hello__name">
+          <span>&#40;</span>
+          <span></span>
+          <span>&#41;</span>
+        </div>
+      </div>
+      <span class="clock"></span>
+    </div>
+
+    <span class="weather f-40"></span>
+
+    <div class="content">
+      <ul class="menu menu-focus f-50">
+        <a href="todo.html"><li>To Do List</li></a>
+        <a href="dday.html"><li>D-Day</li></a>
+        <a href="pomo.html"><li class="menu-focus__li">Pomodoro</li></a>
+        <a href="fav.html"><li>Favorites</li></a>
+        <a href="colour.html"><li>Colours</li></a>
+      </ul>
+
+      <div class="pomo">
+        <div class="pomo-title">
+          <input
+            type="number"
+            min="5"
+            max="60"
+            step="5"
+            value="25"
+            class="pomo-time"
+          />
+          <span>m Timer</span>
+        </div>
+        <div class="pomo-circle">
+          <div class="pomo-progress">
+            <button class="pomo-start pomo-button">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="music-link" href="" target="_blank">
+      <span class="music hidden"></span>
+    </a>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/pomo.js"></script>
+  </body>
+</html>

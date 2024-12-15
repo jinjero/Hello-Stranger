@@ -1,0 +1,7 @@
+.weather {
+  display: inline-block;
+  padding-top: 20px;
+
+  font-style: italic;
+  text-transform: lowercase;
+}

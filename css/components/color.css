@@ -1,0 +1,39 @@
+.colour {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colour-btn {
+  width: 80px;
+  height: 80px;
+
+  border: 3px solid var(--text-color);
+}
+
+.green {
+  background: linear-gradient(to bottom right, #b9efa3 50%, #000 50%);
+}
+
+.pink {
+  background: linear-gradient(to bottom right, #ffd0e2 50%, #000 50%);
+}
+
+.skyblue {
+  background: linear-gradient(to bottom right, #b6dbf5 50%, #000 50%);
+}
+
+.white-blue {
+  background: linear-gradient(to bottom right, #796a57 50%, #68e4ec 50%);
+}
+
+.blue-yellow {
+  background: linear-gradient(to bottom right, #3b5b8a 50%, #f5e9b7 50%);
+}
+
+.brown-pink {
+  background: linear-gradient(to bottom right, #523d16 50%, #f298cc 50%);
+}

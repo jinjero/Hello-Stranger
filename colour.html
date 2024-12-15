@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Hello Stranger</title>
+    <title>Colours</title>
   </head>
   <body>
     <form class="user-form hidden">
@@ -12,7 +12,7 @@
       <input class="f-60" type="text" maxlength="15" required autofocus />
     </form>
 
-    <div class="user-hello hidden f-60">
+    <div class="user-hello f-60">
       <div class="user-hello__total">
         <span>Hello, </span>
         <div class="user-hello__name">
@@ -21,19 +21,28 @@
           <span>&#41;</span>
         </div>
       </div>
-      <span class="clock hidden"></span>
+      <span class="clock"></span>
     </div>
 
-    <span class="weather hidden f-40"></span>
+    <span class="weather f-40"></span>
 
     <div class="content">
-      <ul class="menu hidden f-50">
+      <ul class="menu menu-focus f-50">
         <a href="todo.html"><li>To Do List</li></a>
-        <a href="dday.html"> <li>D-Day</li></a>
-        <a href="pomo.html"> <li>Pomodoro</li></a>
-        <a href="fav.html"> <li>Favorites</li></a>
-        <a href="colour.html"> <li>Colours</li></a>
+        <a href="dday.html"><li>D-Day</li></a>
+        <a href="pomo.html"><li>Pomodoro</li></a>
+        <a href="fav.html"><li>Favorites</li></a>
+        <a href="colour.html"><li class="menu-focus__li">Colours</li></a>
       </ul>
+
+      <div class="colour">
+        <button class="colour-btn green"></button>
+        <button class="colour-btn pink"></button>
+        <button class="colour-btn skyblue"></button>
+        <button class="colour-btn white-blue"></button>
+        <button class="colour-btn blue-yellow"></button>
+        <button class="colour-btn brown-pink"></button>
+      </div>
     </div>
 
     <a class="music-link" href="" target="_blank">
@@ -41,5 +50,6 @@
     </a>
 
     <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/change.js"></script>
   </body>
 </html>
